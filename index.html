@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji Match Mania</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Emoji Match Mania</h1>
+
+        <div class="controls-panel">
+            <div class="difficulty-selectors" id="difficulty-selectors">
+                <button data-level="easy" class="level-button active">Easy (4x4)</button>
+                <button data-level="challenging" class="level-button">Challenging (6x6)</button>
+                <button data-level="hard" class="level-button">Hard (8x8)</button>
+            </div>
+            <button id="restart-button">Restart Game</button>
+        </div>
+
+        <div class="info-panel">
+            <span id="moves">Moves: 0</span>
+            <span id="score">Score: 0</span>
+        </div>
+
+        <div class="game-grid" id="game-grid">
+            </div>
+
+        <div id="win-modal" class="modal">
+            <div class="modal-content">
+                <h2>🎉 Game Cleared! 🎉</h2>
+                <p id="win-message"></p>
+                <button id="play-again-button">Play Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
